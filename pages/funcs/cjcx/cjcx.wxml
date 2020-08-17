@@ -1,0 +1,38 @@
+<!--pages/funcs/cjcx/cjcx.wxml-->
+<!--pages/funcs/kbcx/kbcx.wxml-->
+<view class="container">
+  
+  <view class="section">
+    <view class="section_title">当前选择：</view>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">{{multiArray[0][multiIndex[0]]}}年 第{{multiArray[1][multiIndex[1]]}}学期</view>
+    </picker>
+    <view class="section_button" bindtap="getAllScore">确认</view>
+  </view>
+  
+  <view class="tips">2019-2020第1学期成绩还没出完，如需刷新请清除缓存再来看看</view>
+  <scroll-view scroll-x="true" class='table-wrap'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">学年</view>
+          <view class="th th2">学期</view>
+          <view class="th th3">开课部门</view>
+          <view class="th th4">课程名称</view>
+          <view class="th th5">成绩组成</view>
+          <view class="th th6">成绩</view>
+          <view class="th th7">学分</view>
+      </view>
+      <view class="tr" wx:for="{{cjlist}}" wx:key="*this" id="{{item.kch}}" bindtap="get_score_detail">
+          <view class="td td1">{{item.xnmmc}}</view>
+          <view class="td td2">{{item.xqmmc}}</view>
+          <view class="td td3">{{item.kkbmmc}}</view>
+          <view class="td td4">{{item.kcmc}}</view>
+          <view class="td td5">{{item.xmblmc}}</view>
+          <view class="td td6">{{item.xmcj}}</view>
+          <view class="td td7">{{item.xf}}</view>
+      </view>
+    </view>
+ </scroll-view>
+
+</view>
+

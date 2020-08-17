@@ -1,0 +1,34 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+
+  <view class="info">
+    <view class="info-userAvatarUrl">
+      <open-data type="userAvatarUrl" class="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName" class="nickname"></open-data>
+  </view>
+
+  <view class="status" bindtap="bind">
+    <image wx:if="{{username=='未绑定'}}" src="../../images/others/unlink.png" class="status-image"></image>
+    <image wx:else src="../../images/others/link.png" class="status-image"></image>
+    
+    <view class="status-text">校园卡绑定</view>
+    <view class="status-id">({{username}})</view>
+  </view>
+
+  <view class="index">
+    <button class="index-items" bindtap="clearCache">
+      <image src="../../images/others/clear.png" class="index-image"></image>
+      <view class="index-text">清除缓存</view>
+    </button>
+    <button open-type="contact" class="index-items" bindtap="handleContact">
+      <image src="../../images/others/feedback.png" class="index-image"></image>
+      <view class="index-text">客服反馈</view>
+    </button>
+    <button class="index-last-item" bindtap="aboutme">
+      <image src="../../images/others/about.png" class="index-image"></image>
+      <view class="index-text">关于</view>
+    </button>
+  </view>
+  <view class="motto">V0.6.1(20200608)</view>
+</view>

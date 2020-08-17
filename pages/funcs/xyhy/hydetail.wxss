@@ -1,0 +1,4 @@
+/* pages/funcs/xyhy/hydetail.wxss */
+.card{
+  white-space: pre
+}

@@ -1,0 +1,48 @@
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+
+<view class="container" wx:if="{{active==0}}" >
+
+  <van-cell-group class="cells" >
+    <view wx:for="{{edocList}}" wx:key="*this" >
+      <van-cell title="{{item.printType}}" is-link id="{{item.vcPrintTypeId}}" bindtap="showPDF"/>
+    </view>
+  </van-cell-group>
+  <view class="warning">若列表为空，请返回后重试</view>
+</view>
+
+<view class="container" wx:if="{{active==1}}">
+  <image src="{{smallImageList}}" mode="aspectFit" bindtap="zoom"></image>
+  <button type="primary" bindtap="confirm" class="confirm">确认</button>
+  <button type="default" bindtap="cancel" class="cancel">返回</button>
+</view>
+
+<view class="container" wx:if="{{active==2}}">
+  <van-cell-group class="cells">
+    <van-field
+      value="{{ email }}"
+      clearable
+      bind:blur="getEmail"
+      label="邮箱"
+      left-icon="envelop-o"
+      placeholder="请输入邮箱地址"
+    />
+  </van-cell-group>
+  <button type="primary" bindtap="confirmEmail" class="confirm">确认</button>
+  <button type="default" bindtap="cancel" class="cancel">返回</button>
+</view>
+
+<view class="container" wx:if="{{active==3 && resultMsg['errcode']=='1000'}}">
+  <van-icon name="passed" color="#57BD6A" size="200rpx"/>
+  <view class="tips">
+    <view>申请成功!</view>
+    <view>邮件将在5分钟内发至邮箱</view>
+  </view>
+</view>
+
+<view class="container" wx:if="{{active==3 && resultMsg['errcode']!='1000'}}">
+  <van-icon name="warning-o" size="200rpx"/>
+  <view class="tips">
+    <view>{{resultMsg['errmsg']}}</view>
+    <view>请联系开发者或重试</view>
+  </view>
+</view>

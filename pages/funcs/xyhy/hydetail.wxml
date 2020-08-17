@@ -1,0 +1,9 @@
+
+<view class="card"  wx:for="{{list}}" wx:key="*this">
+  <van-cell-group>
+    <van-cell 
+      title="{{item.dwmc}}" 
+      label="办公地址：{{item.bgdz}}\n办公电话：{{item.bgdh}}\n备注：{{item.bz}}" border="{{ false }}"/>
+  </van-cell-group>
+</view>
+

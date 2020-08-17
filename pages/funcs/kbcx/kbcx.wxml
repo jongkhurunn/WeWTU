@@ -1,0 +1,38 @@
+<!--pages/funcs/kbcx/kbcx.wxml-->
+<view class="container">
+  
+  <view class="section">
+    <view class="section_title">当前选择：</view>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">{{multiArray[0][multiIndex[0]]}}年 第{{multiArray[1][multiIndex[1]]}}学期</view>
+    </picker>
+    <view class="section_button" bindtap="getAllCrouse">确认</view>
+  </view>
+  
+
+  <scroll-view scroll-x="true" class='table-wrap'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">学年</view>
+          <view class="th th2">学期</view>
+          <view class="th th3">课程类别</view>
+          <view class="th th4">课程名称</view>
+          <view class="th th5">授课老师</view>
+          <view class="th th6">上课时间</view>
+          <view class="th th7">上课地点</view>
+          <view class="th th8">学分</view>
+      </view>
+      <view class="tr" wx:for="{{kblist}}" wx:key="*this">
+          <view class="td td1">{{item.xnmc}}</view>
+          <view class="td td2">{{item.xqmmc}}</view>
+          <view class="td td3">{{item.kclb}}</view>
+          <view class="td td4">{{item.kcmc}}</view>
+          <view class="td td5">{{item.jsxm}}</view>
+          <view class="td td6">{{item.sksj}}</view>
+          <view class="td td7">{{item.jxdd}}</view>
+          <view class="td td8">{{item.xf}}</view>
+      </view>
+    </view>
+ </scroll-view>
+
+</view>

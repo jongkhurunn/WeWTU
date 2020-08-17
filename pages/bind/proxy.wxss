@@ -1,0 +1,9 @@
+/* pages/bind/proxy.wxss */
+.title{
+  font-size: 20pt;
+  text-align: center;
+}
+.words{
+  font-size: 12pt;
+  text-indent:2em;
+}

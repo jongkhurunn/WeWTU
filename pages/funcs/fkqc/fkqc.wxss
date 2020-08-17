@@ -1,0 +1,59 @@
+/* pages/funcs/fkqc/fkqc.wxss */
+
+.container{
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.yue{
+  position: fixed;
+  top: 100rpx;
+  width: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chongzhi{
+  position: fixed;
+  top: 300rpx;
+  height: 400rpx;
+  width: 600rpx;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.chongzhi text{
+  color: #333333;
+  font-weight: bold;
+  font-size: 24rpx;
+  position: relative;
+  top: 10rpx;
+}
+.chongzhi input{
+  height: 100rpx;
+  width: 500rpx;
+  border-bottom: 2px solid #f3f3f3;
+  font-size: 78rpx;
+  position: relative;
+  top: 80rpx;
+  left: 50rpx;
+}
+.chongzhi button{
+  width: 500rpx;
+  position: relative;
+  top: 120rpx;
+  font-size: 36rpx;
+  color: #ffffff;
+  background-color: #c40714;
+}
+
+.note{
+  position: relative;
+  top: 520rpx;
+  font-size: 24rpx;
+  color: #666666;
+}

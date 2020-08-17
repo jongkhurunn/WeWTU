@@ -1,0 +1,14 @@
+<!--pages/funcs/xydt/xydt.wxml-->
+<view class="bg"></view>
+<view class="map">
+  <image src="https://picb.oss-cn-beijing.aliyuncs.com/img/ygcampus.jpg" mode="aspectFit" bindtap="previewYG"></image>
+  <view class="campus">阳光校区</view>
+</view>
+<view class="map">
+  <image src="https://picb.oss-cn-beijing.aliyuncs.com/img/nhcampus.jpg" mode="aspectFit" bindtap="previewNH"></image>
+  <view class="campus">南湖校区</view>
+</view>
+<view class="map">
+  <image src="https://picb.oss-cn-beijing.aliyuncs.com/img/dhcampus.jpg" mode="aspectFit" bindtap="previewDH"></image>
+  <view class="campus">东湖校区</view>
+</view>

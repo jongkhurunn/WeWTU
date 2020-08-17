@@ -1,0 +1,16 @@
+/* pages/funcs/xydt/xydt.wxss */
+.bg{
+  background-color: #f0f0f0;
+}
+
+.map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.campus{
+  position: relative;
+  bottom: 30rpx;
+  color: #353535;
+}

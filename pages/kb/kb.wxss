@@ -1,0 +1,113 @@
+/* pages/kb/kb.wxss */
+.container{
+  height: 100vh;
+  background-image: url("https://picb.oss-cn-beijing.aliyuncs.com/img/bki.png");
+  /* background-size:750rpx; */
+  /* background-repeat:no-repeat; */
+}
+.top {
+  position: fixed;
+  top: 0;
+  padding-left: 180rpx;
+  width: 850rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  color: #7b7e82;
+  box-shadow: 0 2rpx 12rpx rgba(32, 33, 36, .28);
+  z-index: 2;
+  
+}
+.top-cell {
+  width: 100rpx;
+  height: 40rpx;
+  position: relative;
+  top: 20rpx;
+  font-size: 9pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1rpx solid black */
+}
+.top-cell-today {
+  width: 200rpx;
+  height: 40rpx;
+  position: relative;
+  top: 20rpx;
+  font-size: 9pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
+  /* border: 1rpx solid black */
+}
+.week{
+  position: fixed;
+  left: 0;
+  width: 50rpx;
+  height: 35rpx;
+  font-size: 9pt;
+  align-items: center;
+}
+
+.scroll {
+  height: 100vh;
+  position: fixed;
+  top: 78rpx;
+}
+.left{
+  width: 40rpx;
+  background-color:#ffffff;
+  color:#7b7e82;
+}
+.left-text {
+  width: 40rpx;
+  height: 120rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.kb-item {
+  width: 100rpx;
+  height: 120rpx;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8pt;
+  color: #ffffff;
+  /* border: 0.3rpx solid #7b7e82; */
+}
+.kb-item-today {
+  width: 200rpx;
+  height: 120rpx;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 8pt;
+  color: #ffffff;
+  /* border: 0.3rpx solid #7b7e82; */
+}
+.kb-text {
+  /* font-size: 8pt;
+  color: #ffffff; */
+  padding: 8rpx;
+  /* writing-mode:vertical-rl; */
+  /* align-content: center; */
+}
+
+
+
+
+
+
+
+

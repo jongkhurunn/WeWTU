@@ -1,0 +1,63 @@
+<!--pages/kb/kb.wxml-->
+<view class="container">
+  <view class="top" bindtap="nextWeek" bindlongtap="lastWeek">
+    <view class="top-cell" wx:for="{{nowWeeks}}" wx:key="*this" wx:if="{{nowDayOfWeek>item.id || nowDayOfWeek>5}}">
+      <view class="top-week" >{{item.week}}</view>
+      <view class="top-date" >{{item.date}}</view>
+    </view>
+    <view class="top-cell-today" wx:for="{{nowWeeks}}" wx:key="*this" wx:if="{{nowDayOfWeek==item.id && nowDayOfWeek<6}}">
+      <view class="top-week" >{{item.week}}</view>
+      <view class="top-date" >{{item.date}}</view>
+    </view>
+    <view class="top-cell" wx:for="{{nowWeeks}}" wx:key="*this" wx:if="{{nowDayOfWeek<item.id}}">
+      <view class="top-week" >{{item.week}}</view>
+      <view class="top-date" >{{item.date}}</view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" class="scroll">
+    <view style="display:flex;height:1510rpx;width: 100%;">
+      <view class="left">
+        <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" wx:key="*this" class="left-text">
+          {{item}}
+        </view>
+      </view>
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" wx:key="*this">
+        <view style="width:750rpx;margin-top:{{(index+1)*120}}rpx;position:absolute;border-bottom:1rpx solid lightgrey;">
+        </view>
+      </view>
+
+      <!--课表-->
+      <view wx:for="{{kblist}}" wx:key="*this">
+        <view class="kb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.week_no-1)*100}}rpx;margin-top:{{(item.time_start-1)*120}}rpx;height:{{(item.time_end-item.time_start+1)*120}}rpx;background-color:{{colorArrays[index%7]}};opacity:1;" wx:if="{{item.week_start<=weekNum && weekNum<=item.week_end && nowDayOfWeek>item.week_no && nowDayOfWeek<6}}">
+          <!-- <view class="kb-text">{{item.course_name}}@{{item.room}}@{{item.teacher}}</view> -->
+          <view class="kb-text">
+            <view>{{item.course_name}}</view>
+            <view>@{{item.room}}</view>
+            <view>@{{item.teacher}}</view>
+          </view>
+        </view>
+        <view class="kb-item-today" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.week_no-1)*100}}rpx;margin-top:{{(item.time_start-1)*120}}rpx;height:{{(item.time_end-item.time_start+1)*120}}rpx;background-color:{{colorArrays[index%7]}};opacity:1;" wx:if="{{item.week_start<=weekNum && weekNum<=item.week_end && nowDayOfWeek==item.week_no && nowDayOfWeek<6}}">
+          <view class="kb-text">
+            <view>{{item.course_name}}</view>
+            <view>@{{item.room}}</view>
+            <view>@{{item.teacher}}</view>
+          </view>
+        </view>
+        <view class="kb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.week_no)*100}}rpx;margin-top:{{(item.time_start-1)*120}}rpx;height:{{(item.time_end-item.time_start+1)*120}}rpx;background-color:{{colorArrays[index%7]}};opacity:1;" wx:if="{{item.week_start<=weekNum && weekNum<=item.week_end && nowDayOfWeek<item.week_no && nowDayOfWeek!=0 && nowDayOfWeek<6}}">
+          <view class="kb-text">
+            <view>{{item.course_name}}</view>
+            <view>@{{item.room}}</view>
+            <view>@{{item.teacher}}</view>
+          </view>
+        </view>
+        <view class="kb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.week_no-1)*100}}rpx;margin-top:{{(item.time_start-1)*120}}rpx;height:{{(item.time_end-item.time_start+1)*120}}rpx;background-color:{{colorArrays[index%7]}};opacity:1;" wx:if="{{item.week_start<=weekNum && weekNum<=item.week_end && nowDayOfWeek==0 || nowDayOfWeek>5}}">
+          <view class="kb-text">
+            <view>{{item.course_name}}</view>
+            <view>@{{item.room}}</view>
+            <view>@{{item.teacher}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

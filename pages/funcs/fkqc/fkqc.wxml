@@ -1,0 +1,15 @@
+<!--pages/funcs/fkqc/fkqc.wxml-->
+<view class="container">
+  <view class="yue">
+    <text style="color: #666666;font-size:48rpx">校园卡余额</text>
+    <text style="color: #333333;font-size:78rpx">{{balance}}</text>
+  </view>
+
+  <form class="chongzhi" bindsubmit="chongzhi">
+    <text>圈存余额（元）</text>
+    <input name="money" value="{{money}}" maxlength="3" type="number"></input>
+    <button form-type="submit">转入校园卡</button>
+  </form>
+
+  <text class="note">圈存时间为每天5:00-21:00</text>
+</view>

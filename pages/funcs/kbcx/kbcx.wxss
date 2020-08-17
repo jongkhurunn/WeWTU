@@ -1,0 +1,72 @@
+
+.container{
+  height: 100vh;
+  /* background-image: url('https://picb.oss-cn-beijing.aliyuncs.com/img/devpage.png'); */
+  /* background-size: auto 100%;
+  background-attachment:fixed;
+  background-position:center; 
+  background-repeat: no-repeat; */
+}
+
+.section{
+  display: flex;
+  position: absolute;
+  top: 0rpx;
+  height: 80rpx;
+  width: 750rpx;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lightgray; */
+}
+.picker{
+  padding: 5rpx 10rpx;
+  border: 1rpx solid black;
+  border-radius: 10rpx;
+}
+.section_button{
+  position: relative;
+  left: 20rpx;
+  background-color: yellow;
+}
+
+
+
+.table-wrap{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 100rpx;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.table{
+  border:1px solid #dadada;
+  border-right:0;
+  border-bottom: 0;
+  width: 1500rpx;
+  margin-left: 1%;
+  font-size: 20rpx;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td{
+  padding: 5rpx 10rpx;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 300rpx;
+  white-space: normal;
+}
+.th{
+  background-color: lightgray
+}
+.th1, .th3, .th5, .td1, .td3, .td5{
+  width: 120rpx;
+}
+.th2, .th8, .td2, .td8{
+  width: 60rpx;
+}

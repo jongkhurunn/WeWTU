@@ -1,0 +1,17 @@
+<!--pages/bind/bind.wxml-->
+<view class="container">
+  <view class="bg"></view>
+  <form class="login" bindsubmit="login">
+    <view class="title">用户登陆</view>
+    <input name="username" placeholder="学号" class="username" type="number"></input>
+    <input name="password" placeholder="密码" class="password" password></input>
+    
+    <view class="check">
+      <checkbox class="checkbox" value="checked" bindtap="checkBox"></checkbox>
+      <view>本人已知晓并同意</view>
+      <view bindtap="proxy" class="proxy">服务协议</view>
+    </view>
+    <button form-type="submit">登 陆</button>
+  </form>
+  <view class="tips">忘记密码请用浏览器登陆官网修改密码</view>
+</view>

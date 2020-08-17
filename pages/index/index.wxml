@@ -1,0 +1,43 @@
+<!--pages/index/index.wxml-->
+<view wx:if="{{announce!=''}}">
+  <van-notice-bar speed="30" left-icon="volume-o" text="{{announce}}"/>
+</view>
+
+<view class="container"> 
+  <swiper class="images-swpier" autoplay="true" indicator-dots="true" indicator-active-color="#ffffff">
+  <swiper-item wx:for="{{imgs}}" wx:key="*this">
+    <image class="images" src="{{item}}"></image>
+  </swiper-item>
+  </swiper>
+
+  <view class="funcs">
+    <view class="unit-left" id="fkqc" bindtap="jump">
+      <image src="../../images/func/fudai.png"></image>
+      <text>饭卡圈存</text>
+    </view>
+    <view class="unit-right" id="xyhy" bindtap="jump">
+      <image src="../../images/func/bianpao.png"></image>
+      <text>校园黄页</text>
+    </view>
+    <view class="unit-left" id="kbcx" bindtap="jump">
+      <image src="../../images/func/shu.png"></image>
+      <text>课程查询</text>
+    </view>
+    <view class="unit-right" id="cjcx" bindtap="jump">
+      <image src="../../images/func/wushi.png"></image>
+      <text>成绩查询</text>
+    </view>
+    <view class="unit-bt-left" id="xydt" bindtap="jump">
+      <image src="../../images/func/dahongdenglong.png"></image>
+      <text>校园地图</text>
+    </view>
+    <view class="unit-bt-right" id="edoc" bindtap="jump">
+      <image src="../../images/func/meihua.png"></image>
+      <text>文档申请</text>
+      <image class="new" src="../../images/func/new.png"></image>
+    </view>
+    
+    
+  </view>
+  <view class="motto">崇 真 尚 美</view>
+</view>

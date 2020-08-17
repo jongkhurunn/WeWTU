@@ -1,0 +1,105 @@
+/* pages/index/index.wxss */
+
+.container {
+  height: 100vh;
+  background-image: url("https://picb.oss-cn-beijing.aliyuncs.com/img/bki.png");
+  background-attachment:fixed;
+  background-position:center; 
+  background-repeat: repeat;
+} 
+.images-swpier{
+  position: fixed;
+  top: 110rpx;
+  height: 220rpx;
+  width: 675rpx;
+  align-self: center;
+  border-radius: 10rpx;
+  box-shadow: 0px 2px 10px #B8B8B8;
+}
+.images {
+  border-radius: 10rpx;
+  height: 100%;
+  width: 100%;
+}
+
+
+.funcs{
+  position: fixed;
+  top: 370rpx;
+  height:485rpx;
+  width: 90%;
+  border: 1px solid #F8F8F8;
+  border-radius: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background-color: #ffffff;
+  background-image: url("https://picb.oss-cn-beijing.aliyuncs.com/img/func-bki.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto; 
+  background-position: bottom center;
+  box-shadow: 0px 1px 10px #B8B8B8;
+}
+.funcs image{
+  height: 60rpx;
+  width: 60rpx;
+}
+.funcs text{
+  color: #353535;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.unit-left{
+  height: 160rpx;
+  width: 335rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+}
+.unit-right{
+  height: 160rpx;
+  width: 337.5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid #f3f3f3;
+}
+.unit-bt-left{
+  height: 160rpx;
+  width: 335rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f3f3f3;
+}
+.unit-bt-right{
+  height: 160rpx;
+  width: 337.5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.unit-bt{
+  height: 160rpx;
+  width: 675rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new{
+  position: absolute;
+  bottom: 110rpx;
+  right: 290rpx;
+  /* left: -10rpx; */
+}
+
+.motto{
+  position: fixed;
+  bottom: 20rpx;
+  font-size: 24rpx;
+  color: #a59666;
+  opacity: 0.3;
+}

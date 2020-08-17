@@ -1,0 +1,41 @@
+/* pages/funcs/edoc/edoc.wxss */
+.container{
+  background-color: #F8F8F8;
+  height: 100vh;
+}
+
+.cells{
+  width: 100%;
+  position: absolute;
+  top: 120rpx;
+}
+
+.warning{
+  position: fixed;
+  bottom: 50rpx;
+  font-size: 24rpx;
+  color: #333333;
+  opacity: 0.3;
+}
+
+.confirm{
+  position: absolute;
+  height: 80rpx;
+  width: 70%;
+  bottom: 200rpx;
+}
+
+.cancel{
+  position: absolute;
+  height: 80rpx;
+  width: 70%;
+  bottom: 100rpx;
+}
+
+.tips{
+  position: relative;
+  bottom: 450rpx;
+  width: 80%;
+  text-align: center;
+  color: #353535;
+}

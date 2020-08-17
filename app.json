@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bind/bind",
+    "pages/bind/proxy",
+    "pages/logs/logs",
+    "pages/userinfo/userinfo",
+    "pages/kb/kb",
+    "pages/my/my",
+    "pages/my/about",
+    "pages/funcs/fkqc/fkqc",
+    "pages/funcs/kbcx/kbcx",
+    "pages/funcs/cjcx/cjcx",
+    "pages/funcs/xyhy/xyhy",
+    "pages/funcs/xyhy/hydetail",
+    "pages/funcs/xydt/xydt",
+    "pages/funcs/edoc/edoc"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c40714",
+    "navigationBarTitleText": "We纺大",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7b7e82",
+    "selectedColor": "#c40714",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/bar/shouye.png",
+        "selectedIconPath": "images/bar/shouye-2.png"
+      },
+      {
+        "pagePath": "pages/kb/kb",
+        "text": "课表",
+        "iconPath": "images/bar/paike.png",
+        "selectedIconPath": "images/bar/paike-2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/bar/xuefen.png",
+        "selectedIconPath": "images/bar/xuefen-2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
