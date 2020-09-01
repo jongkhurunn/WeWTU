@@ -42,4 +42,4 @@ QQ群：1072473653
 
 ## 体验
 
-<img src="https://picb.oss-cn-beijing.aliyuncs.com/img/gh_d97d422ed24b_1280.jpg" width="20%">
+<img src="https://picb.oss-cn-beijing.aliyuncs.com/img/gh_d97d422ed24b_1280.jpg" width="50%">
