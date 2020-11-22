@@ -42,4 +42,4 @@ QQ群：1072473653
 
 ## 体验
 
-<img src="https://picb.oss-cn-beijing.aliyuncs.com/img/wewtu_qrcode.png">
+<img src="./images/wewtu_qrcode.png" alt="wewtu_qrcode" width="50%" />
